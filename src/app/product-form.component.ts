@@ -8,4 +8,7 @@ import { Product } from './products';
 
 export class ProductFormComponent {
    model = new Product(1,'ProductA');
+   submitted: boolean = false;
+   onSubmit() {
+     this.submitted = true; }
 }

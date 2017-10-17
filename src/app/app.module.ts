@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }  from './app.component';
+import { HttpModule } from '@angular/http';
 import { Appproduct } from './product.component'
 import { AppInventory } from './inventory.component'
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ProductFormComponent } from './product-form.component';
+
+
 
 const appRoutes: Routes = [
    { path: 'Product', component: Appproduct },
@@ -13,7 +16,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule ({
-   imports: [ BrowserModule,FormsModule,
+   imports: [ BrowserModule,FormsModule, HttpModule,
    RouterModule.forRoot(appRoutes)],
    declarations: [ AppComponent,Appproduct,AppInventory,ProductFormComponent],
    bootstrap: [ AppComponent ]
