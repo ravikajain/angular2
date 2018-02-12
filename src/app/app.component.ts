@@ -19,4 +19,6 @@ appList: any[] = [ {
       "ID": "2",
       "url": 'app/Images/Two.jpg'
    } ];
+   // console.log("test");
+   // console.log(window.localStorage.getItem("regId"));
  }
